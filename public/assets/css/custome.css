@@ -1,0 +1,393 @@
+:root{
+    --color: #e23232;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color : #fff;
+    color: #020202;
+    letter-spacing: 1px;
+  }
+
+.masthead{
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+/* Navbar */
+
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 1rem var(--color);
+
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #FF2603;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button{
+    background-color: #FF2603;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 54px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #ff644d;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #525252;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover .nav-link.active{
+    color: #020202;
+
+}
+
+/* @media (min-widht: 991px){
+    
+} */
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 0;
+    height: 4px;
+    background-color: #FF2603;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+
+/* End Navbar */
+
+/* Hero Section */
+
+.hero-section{
+    background: url(/assets/image/background-part-1.png)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.hero-section .container{
+     height: 100vh;
+     z-index: 1;
+     position: relative;
+}
+
+.hero-section h1{
+    font-size: 1.8rem;
+}
+
+.hero-section h2{
+    font-size: 1.5rem;
+}
+
+.hero-section .white-rectangle {
+    position: absolute; 
+    bottom: -50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80%; 
+    height: 60%; 
+    background-color: white;
+    border-radius: 1.9rem; 
+    z-index: 1; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 5%;
+
+  }
+
+/* End Hero Section */
+
+/* Hero Section Detail*/
+
+.hero-section-detail{
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    border-radius: 2rem;
+}
+
+.p-tanggal{
+    margin-top: -1rem;
+}
+
+.profile-trending{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.margin-left{
+    margin-left: -4rem;
+}
+
+.line{
+    margin-top: 10rem;
+}
+.line-trending{
+    margin-top: 1.5rem;
+    color: #525252;
+}
+
+.like{
+    margin-left: 8em;
+}
+
+#trending-section {
+    height: 100vh;
+    padding: 75 45 75 75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+
+/* End Hero Section Detail*/
+
+/* CUSTOMER SECTION */
+.customer {
+    background: url(images/bg-customer.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;    font-family: poppins;
+    padding-right: 10rem;
+    padding-left: 14rem;
+    padding-top: 100px;
+  }
+  
+
+  
+  .text-customer p {
+    color: var(--green-text-color);
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .text-customer h2 {
+    color: var(--black-text-color);
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 499px;
+  }
+  
+  .text-customer h6 {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: pre-line;
+  }
+  
+  .button {
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  
+  .up {
+    animation: up 1600ms infinite ease-in-out;
+    width: 350px;
+    height: 210px;
+    border-radius: 18px;
+    background: #fff;
+  }
+  
+  .down {
+    animation: down 1600ms infinite ease-in-out;
+    width: 350px;
+    height: 210px;
+    border-radius: 18px;
+    background: #fff;
+  }
+  
+  @keyframes up {
+    0% {
+      transform: translateY(60px);
+    }
+    70% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(60px);
+    }
+  }
+  
+  @keyframes down {
+    0% {
+      transform: translateY(-60px);
+    }
+    70% {
+      transform: translateY(60px);
+    }
+    100% {
+      transform: translateY(-70px);
+    }
+  }
+  
+  /* .card-up {
+    margin-left: -160px;
+  } */
+  
+  .card-body {
+    padding: 20px 30px 20px 30px;
+  }
+  
+  .card-body h5 {
+    color: var(--black-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .card-body p {
+    color: #484b5c;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .name {
+    margin-left: 15px;
+    margin-top: 2px;
+  }
+  
+  .name h6 {
+    color: var(--green-text-color);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .name p {
+    color: var(--grey-text-color);
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: -9px;
+  }
+
+  /* SLIDER */
+
+
+.carousel-item .custom-carousel-content{
+  width: 50%;
+  transform: translate(0%, -10%);
+}
+.custom-carousel-content{
+  text-align: start;
+}
+.custom-carousel-content h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.custom-carousel-content h1 span{
+  color: #fbff00;
+}
+.custom-carousel-content p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.custom-carousel-content .btn-slider{
+  border-radius: 0px;
+  padding: 8px 26px;
+  color: #fff;
+  background-color: #FF2603;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* detail */
+
+.imgdt{
+  width: 100%;
+  height: auto;
+  
+ }
+
+ .hasatu{
+  font-family: inherit;
+  font-weight: 700;
+ }
+
+ .profileges{
+  margin-right: 1rem;
+  justify-content: right;
+ }
+
+ .divisilagi {
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 20px 90px;
+ }
+
+  .h4{
+  font-weight: 600;
+  padding-left: 5.5rem;
+  margin-top: 2rem;
+  }
+  
+ .div-img{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ }
+
+
